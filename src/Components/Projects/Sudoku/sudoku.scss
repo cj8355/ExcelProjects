@@ -1,9 +1,54 @@
-.Container {
+.SudokuContainer {
     display: flex;
     align-items: start;
     justify-content: start;
-    p {
-        color: white;
-        align-items: flex-start;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vw;
+    flex-wrap: wrap;
+
+    .textContainer {
+            margin-left: 10%;
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            align-items: flex-start;
+        }
+
+        .codeContainer {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            input {
+                cursor: pointer;
+            }
+        }
     }
+    
+
+    img {
+        border-radius: 10px;
+        height: 350px;
+        width: 650px;
+    }
+}
+
+#results {
+    code {
+        color: white;
+    }
+}
+
+.gif {
+    width: 500px;
+    height: 500px;
 }
