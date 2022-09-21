@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/ExcelProjects/static/css/main.60399e03.css",
-    "main.js": "/ExcelProjects/static/js/main.aa1fe2b9.js",
+    "main.css": "/ExcelProjects/static/css/main.5ec54643.css",
+    "main.js": "/ExcelProjects/static/js/main.258319c6.js",
+    "static/media/sudoku-vid.webm": "/ExcelProjects/static/media/sudoku-vid.737235b219d7eb08d08d.webm",
+    "static/media/sudoku-game.xlsm": "/ExcelProjects/static/media/sudoku-game.5d5645987f6e84bb2a65.xlsm",
+    "static/media/sudoku.png": "/ExcelProjects/static/media/sudoku.d60e61922468c107ada4.png",
     "index.html": "/ExcelProjects/index.html",
-    "main.60399e03.css.map": "/ExcelProjects/static/css/main.60399e03.css.map",
-    "main.aa1fe2b9.js.map": "/ExcelProjects/static/js/main.aa1fe2b9.js.map"
+    "main.5ec54643.css.map": "/ExcelProjects/static/css/main.5ec54643.css.map",
+    "main.258319c6.js.map": "/ExcelProjects/static/js/main.258319c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.60399e03.css",
-    "static/js/main.aa1fe2b9.js"
+    "static/css/main.5ec54643.css",
+    "static/js/main.258319c6.js"
   ]
 }
