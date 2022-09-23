@@ -43,12 +43,31 @@
 }
 
 #results {
+    width: 500px;
+    height: 300px;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid pink;
+    overflow-y: scroll;
+    text-align: center;
+    justify-content: center;
+
     code {
         color: white;
+
+        
     }
+    .codeOne {
+        align-items: center;
+        justify-content: center;
+        color: aqua;
+    }
+    
 }
 
 .gif {
     width: 500px;
     height: 500px;
 }
+
