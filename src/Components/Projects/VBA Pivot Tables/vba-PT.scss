@@ -1,0 +1,72 @@
+.vbaContainer {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vw;
+    flex-wrap: wrap;
+
+    .textContainer {
+            margin-left: 10%;
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            align-items: flex-start;
+        }
+
+        .codeContainer {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            input {
+                cursor: pointer;
+            }
+        }
+    }
+    
+
+    img {
+        border-radius: 10px;
+        height: 350px;
+        width: 650px;
+    }
+}
+
+#results {
+    width: 500px;
+    height: 300px;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid pink;
+    overflow-y: scroll;
+    text-align: center;
+    justify-content: center;
+
+    code {
+        color: white;
+
+        
+    }
+    .codeOne {
+        align-items: center;
+        justify-content: center;
+        color: aqua;
+    }
+    
+}
+
+.gif {
+    width: 500px;
+    height: 500px;
+}
