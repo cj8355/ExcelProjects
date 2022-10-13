@@ -81,8 +81,7 @@ Projects
             <ArrowBackIosIcon className="arrow left" onClick={()=>handleClick("left")}/>
             <ArrowForwardIosIcon className="arrow right"  onClick={()=>handleClick("right")}/>
 
-        {/* <Sudoku />
-        <VBA_PT /> */}
+        
         </div>
     )
 }

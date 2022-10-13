@@ -52,6 +52,7 @@
         left: 0;
         transition: all 1s ease-out;
         margin-top: 10%;
+        
 
         // @include medium {
         //     height: 60%;
@@ -68,7 +69,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            
+            height: 100%;
 
             .item {
                 width: 700px;
