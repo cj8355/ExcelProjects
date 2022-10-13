@@ -1,0 +1,239 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    
+    height: 30%;
+    
+
+    h1 {
+        font-size: 50px;
+        position: absolute;
+        top: 15px;
+    }
+
+    .arrow{
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        
+
+        &.left {
+            left: 5vw;
+            height: 50px;
+            width: 45px;
+
+            // @include mobile {
+            //     left: 2vw;
+            // }
+        }
+
+        &.right {
+            right: 5vw;
+            height: 50px;
+            width: 45px;
+
+            // @include mobile {
+            //     right: 2vw;
+            // }
+        }
+
+        
+    }
+
+    .slider {
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+        margin-top: 10%;
+
+        // @include medium {
+        //     height: 60%;
+            
+        // }
+
+        // @include mobile {
+        //     height: 75%;
+            
+        // }
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+            .item {
+                width: 700px;
+                height: 100%;
+                background-color: purple;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                // @include medium {
+                //     flex-direction: column;
+                //     width: 60%;
+                //     height: 100%;
+                //     margin: 0;
+                // }
+
+                // @include mobile {
+                //     flex-direction: column;
+                //     width: 60%;
+                //     height: 100%;
+                //     margin: 0;
+                // }
+
+                .left {
+                    flex: 6;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding-left: 5px;
+
+                        // @include medium {
+                        //     align-items: center;
+                        //     justify-content: space-between;
+                            
+                        // }
+
+                        // @include mobile {
+                        //     width: 100%;
+                        //     height: 100%;
+                        // }
+                    
+
+                    .imgContainer {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 3px 0;
+
+                        // @include mobile {
+                        //     width: 20px;
+                        //     height: 20px;
+                        // }
+
+                        img {
+                            width: 25px;
+
+                            // @include mobile {
+                            //     width: 15px;
+                            // }
+                        } }
+
+                        .iconContainer {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            color: white;
+                            padding: 3px 0;
+
+                            .websiteIcon {
+                                color: white;
+                                height: 30px;
+                                width: 30px;
+
+                                &:hover {
+                                    color: rgb(197, 196, 196);
+                                }
+                            }
+
+                            .gitHubIcon {
+                                color: white;
+                                height: 30px;
+                                width: 30px;
+
+                                &:hover {
+                                    color: rgb(197, 196, 196);
+                                }
+                            }
+
+                        }
+
+                        .techUsed {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            padding-inline-start: 0;
+                            
+                            // @include mobile {
+                            //     overflow: hidden;
+                            // }
+                            
+
+                            li {
+                                padding: 5px;
+                                border-radius: 5px;
+                                margin: 2px;
+                                background-color: rgba(151, 146, 146, 0.4);
+                                
+
+                            }
+                        }
+                    
+                    h2 {
+                        font-size: 20px;
+                        padding: 3px 0;
+
+                        // @include mobile {
+                        //     font-size: 13px;
+                        // }
+                    }
+                    p {
+                        font-size: 13px;
+
+                        // @include mobile {
+                        //     display: none;
+                        // }
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                
+                }
+            }
+
+                .right {
+                    flex: 8;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 400px;
+                        // transform: rotate(-10deg);
+                    }
+                
+                }
+            }
+        }
+    }
+}
