@@ -17,7 +17,7 @@ export default function Projects() {
             icon: "assets/globe.png",
             title: "Sudoku",
             desc: "VBA based sudoku game",
-            img: "assets/retroland.png",
+            img: "assets/sudoku.png",
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
@@ -27,7 +27,7 @@ export default function Projects() {
             icon: "assets/globe.png",
             title: "VBA Pivot Tables",
             desc: "Automatically create Pivot Tables using VBA",
-            img: "assets/retroland.png",
+            img: "assets/vba.png",
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
@@ -43,16 +43,16 @@ export default function Projects() {
     return (
         <div className="Container">
 
-Projects
+
             <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((d) => (
                 <div className="container" key={d.id}>
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <div className="imgContainer">
+                                {/* <div className="imgContainer">
                                     <img src={process.env.PUBLIC_URL + "/" +  d.icon} alt="" />
-                                </div>
+                                </div> */}
                                 <h2>{d.title}</h2>
                                 <p>{d.desc}</p>
                                 <div className="iconContainer">
