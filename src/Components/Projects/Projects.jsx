@@ -20,6 +20,7 @@ export default function Projects() {
             img: "assets/sudoku.png",
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
+            vid: "assets/sudoku-vid.webm",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
         {
@@ -30,6 +31,7 @@ export default function Projects() {
             img: "assets/vba.png",
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
+            vid: "assets/vba-vid.webm",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
        
@@ -72,6 +74,7 @@ export default function Projects() {
                         </div>
                         <div className="right">
                             <img src={process.env.PUBLIC_URL + "/" +  d.img} alt="" />
+                            <video className="vid" src={process.env.PUBLIC_URL + "/" +  d.vid} height="300" width="400" controls autoPlay={true}></video>
                         </div>
                     </div>
                     

@@ -40,6 +40,9 @@
             // @include mobile {
             //     right: 2vw;
             // }
+
+
+           
         }
 
         
@@ -231,9 +234,28 @@
                     justify-content: center;
                     overflow: hidden;
 
+                    &:hover {
+                        img {
+                            display: none;
+                        }
+                    }
+
                     img {
                         width: 400px;
                         // transform: rotate(-10deg);
+                        height: 300px;
+                        z-index: 5;
+                        
+
+                        
+                    }
+
+                    video {
+                        
+                        position: absolute;
+                        display: block;
+                        z-index: 2;
+                        
                     }
                 
                 }
