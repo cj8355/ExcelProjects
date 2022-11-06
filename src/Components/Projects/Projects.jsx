@@ -6,10 +6,15 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import CodeIcon from '@mui/icons-material/Code';
+import {code} from "./Sudoku/SudokuCode";
+import CloseIcon from '@mui/icons-material/Close';
+import {vbaCode} from "./VBA Pivot Tables/VbaCode";
 
 export default function Projects() {
 
     const [currentSlide,setCurrentSlide] = useState(0);
+    const [codeDiv, setCodeDiv] = useState(false)
 
     const data = [
         {
@@ -21,6 +26,7 @@ export default function Projects() {
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             vid: "assets/sudoku-vid.webm",
+            code: code,
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
         {
@@ -32,6 +38,7 @@ export default function Projects() {
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             vid: "assets/vba-vid.webm",
+            code: vbaCode,
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
        
@@ -40,6 +47,18 @@ export default function Projects() {
     const handleClick = (way)=> {
         way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2) :
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+        console.log(data)
+        console.log(code)
+    }
+
+    const showCode = () => {
+        setCodeDiv(!codeDiv)
+        console.log(codeDiv)
+    }
+
+    const hideCode = () => {
+        setCodeDiv(!codeDiv)
+        console.log(codeDiv)
     }
 
     return (
@@ -58,8 +77,9 @@ export default function Projects() {
                                 <h2>{d.title}</h2>
                                 <p>{d.desc}</p>
                                 <div className="iconContainer">
-                                <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" /> </a>
-                                <a href={d.repo} target="_blank"> <GitHubIcon className="gitHubIcon" /> </a>
+                                {/* <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" /> </a>
+                                <a href={d.repo} target="_blank"> <GitHubIcon className="gitHubIcon" /> </a> */}
+                                <CodeIcon className="codeIcon" onClick={()=>showCode()}/>
                                 </div>
                                 
                                 {/* {d.techUsed.length && (
@@ -74,16 +94,27 @@ export default function Projects() {
                         </div>
                         <div className="right">
                             <img src={process.env.PUBLIC_URL + "/" +  d.img} alt="" />
-                            <video className="vid" src={process.env.PUBLIC_URL + "/" +  d.vid} height="300" width="400" controls autoPlay={true}></video>
+                            <video className="vid" src={process.env.PUBLIC_URL + "/" +  d.vid} height="300" width="400" controls autoPlay muted></video>
                         </div>
                     </div>
+                    {codeDiv && 
+                <div className="codeContainer">
+                    <CloseIcon className="closeIcon" onClick={()=>hideCode()} /><br/>
+                    <span>
+                      {d.code} 
+                    </span>
+                    </div>
+            }
+                    
                     
                 </div>
+                
                 ))}
             </div>
             <ArrowBackIosIcon className="arrow left" onClick={()=>handleClick("left")}/>
             <ArrowForwardIosIcon className="arrow right"  onClick={()=>handleClick("right")}/>
 
+            
         
         </div>
     )
