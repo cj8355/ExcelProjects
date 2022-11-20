@@ -26,7 +26,7 @@ export default function Projects() {
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             vid: "assets/sudoku-vid.webm",
-            code: code,
+            code: "https://github.com/cj8355/SudokuExcelProject/blob/main/SudokuCode.vba",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
         {
@@ -38,7 +38,7 @@ export default function Projects() {
             livesite: "http://cj8355.github.io/RetroLand",
             repo: "https://github.com/cj8355/RetroLand",
             vid: "assets/vba-vid.webm",
-            code: vbaCode,
+            code: "https://github.com/cj8355/PivotTablesExcelProject/blob/main/PTCode.vba",
             techUsed: [ "React", "Styled Components", "Firebase", "Material UI"]
         },
        
@@ -79,7 +79,7 @@ export default function Projects() {
                                 <div className="iconContainer">
                                 {/* <a href={d.livesite} target="_blank"> <LanguageOutlinedIcon className="websiteIcon" /> </a>
                                 <a href={d.repo} target="_blank"> <GitHubIcon className="gitHubIcon" /> </a> */}
-                                <CodeIcon className="codeIcon" onClick={()=>showCode()}/>
+                                <a href={d.code} target="_blank"><CodeIcon className="codeIcon" /></a>
                                 </div>
                                 
                                 {/* {d.techUsed.length && (
