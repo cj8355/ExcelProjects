@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ExcelProjects/static/css/main.94634aea.css",
-    "main.js": "/ExcelProjects/static/js/main.c256f5c3.js",
+    "main.css": "/ExcelProjects/static/css/main.5690f919.css",
+    "main.js": "/ExcelProjects/static/js/main.5de0be6f.js",
     "static/media/vba-vid.webm": "/ExcelProjects/static/media/vba-vid.67c9824ad62acb007642.webm",
     "static/media/sudoku-vid.webm": "/ExcelProjects/static/media/sudoku-vid.737235b219d7eb08d08d.webm",
     "static/media/vba-PT.xlsm": "/ExcelProjects/static/media/vba-PT.d07d17b6917261b33b86.xlsm",
@@ -9,11 +9,11 @@
     "static/media/sudoku-game.xlsm": "/ExcelProjects/static/media/sudoku-game.5d5645987f6e84bb2a65.xlsm",
     "static/media/sudoku.png": "/ExcelProjects/static/media/sudoku.d60e61922468c107ada4.png",
     "index.html": "/ExcelProjects/index.html",
-    "main.94634aea.css.map": "/ExcelProjects/static/css/main.94634aea.css.map",
-    "main.c256f5c3.js.map": "/ExcelProjects/static/js/main.c256f5c3.js.map"
+    "main.5690f919.css.map": "/ExcelProjects/static/css/main.5690f919.css.map",
+    "main.5de0be6f.js.map": "/ExcelProjects/static/js/main.5de0be6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.94634aea.css",
-    "static/js/main.c256f5c3.js"
+    "static/css/main.5690f919.css",
+    "static/js/main.5de0be6f.js"
   ]
 }
